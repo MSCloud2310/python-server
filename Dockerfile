@@ -4,10 +4,9 @@ RUN apt-get install -y python3
 COPY start.sh /start.sh
 ENV SERVER_PORT=8080
 EXPOSE $SERVER_PORT/tcp
-WORKDIR /web-server
+WORKDIR /html
 
-# TODO Complete
-VOLUME [ "/web-server" ] 
+VOLUME [ "/html" ] 
 
 # -----------------------
 # start.sh se usa para poder incorporar variables de ambiente en CMD
